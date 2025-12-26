@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package log;
+
+option go_package = "github.com/spigcoder/Hydra/api/v1/log;log";
+
+message Record {
+    bytes  value  = 1;
+    uint64 offset = 2;
+}
